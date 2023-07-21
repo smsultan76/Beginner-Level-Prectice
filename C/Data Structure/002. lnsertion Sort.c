@@ -9,11 +9,12 @@ int main(){
     printf("Enter Size of Array: ");
     scanf("%d",&n);
     int arr[n];
+    printf("Enter %d Number:\n",n);
     for(i=0; i<n; i++){
         scanf("%d",&arr[i]);
     }
     printf("Before sort:\n");
-    PrintArray(arr,5);
+    PrintArray(arr,n);
     for(i=1; i<n; i++){
         temp = arr[i];
         j=i-1;
@@ -24,5 +25,5 @@ int main(){
         arr[j+1] = temp;
     }
     printf("After Insertion Sort:\n");
-    PrintArray(arr,5);
+    PrintArray(arr,n);
 }
