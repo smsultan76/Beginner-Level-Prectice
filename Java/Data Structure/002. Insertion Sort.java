@@ -27,7 +27,7 @@ public class Insertion {
         for(int i=0; i<obj.n; i++){
             arr[i] = sc.nextInt();
         }
-        System.out.println("Before Sort: ");
+        System.out.println("Before Sort:");
         obj.PrintArray(arr);
         obj.InsertionSort(arr);
         System.out.println("After Insertion Sort: ");
